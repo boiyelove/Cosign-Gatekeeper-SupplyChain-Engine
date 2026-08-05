@@ -1,0 +1,11 @@
+{
+  "tenantId": "tenant-a",
+  "correlationId": "rank-48-deny-001",
+  "target": "development",
+  "requestedAction": "plan_cosign_gatekeeper_supplychain_engine",
+  "credentialMode": "workload_identity",
+  "publicNetworkAccess": true,
+  "evidenceFresh": true,
+  "approved": false,
+  "containsSecret": false
+}
