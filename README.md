@@ -2,6 +2,19 @@
 
 Ensure only policy-compliant, cryptographically verified container images run on AKS.
 
+## Project metadata
+
+The metadata below is derived from tracked source, manifests, and infrastructure
+files. It describes what this repository includes; live-service integration remains
+bounded by the documented deployment and validation limitations.
+
+| Category | Included |
+| --- | --- |
+| Platforms | Microsoft Azure; GitHub Actions; Kubernetes |
+| Services and stack | AKS; ACR; Gatekeeper; Cosign; GitHub Actions |
+| Languages and formats | Python; Bicep; Bicep parameters; Bash; JSON; YAML |
+| Delivery and IaC | Bicep + `.bicepparam`; GitHub Actions CI; Kubernetes/YAML manifests; Python validation/tests |
+
 ## Problem statement
 
 A release request binds an image digest to keyless signing evidence and an admission policy plan that rejects unsigned or unapproved artifacts before AKS execution.
