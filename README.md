@@ -41,6 +41,14 @@ tests cannot claim a live cloud change occurred.
 
 The upper boundary names the principal services and technologies used by this repository. The lower boundary shows the implemented control flow: desired state is validated, provider action remains an explicit integration gate, and sanitized evidence is retained for review and deterministic replay.
 
+## Best complementary diagram
+
+**Recommended view: Container supply-chain verification pipeline.** A delivery-pipeline view is the strongest complement because it makes artifact progression, security gates, promotion authority, and evidence outputs visible.
+
+![Icon-based container supply-chain verification pipeline for Cosign-Gatekeeper-SupplyChain-Engine](docs/operational-view.svg)
+
+The view follows **Build immutable image → Sign and publish artifact → Verify admission policy → Run approved workload**. Use it during design reviews, operational walkthroughs, and failure-mode discussions; use the logical architecture above when the question is which technologies integrate.
+
 ## Quickstart
 
 Requirements: Python 3.11+ and Git. No Azure credentials are required.
